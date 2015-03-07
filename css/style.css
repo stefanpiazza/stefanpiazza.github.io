@@ -84,7 +84,7 @@ body {
 
 .sub-header {
 	width: 100%;
-	padding: 10% 0;
+	padding: 75px 0;
 	left: 0;
 	text-align: center
 }
@@ -224,7 +224,7 @@ a {
 	}
 
 	.recent h3 {
-		margin-top: 5%;
+		margin-top: 35px;
 	}
 
 	/*Second child of container class*/
@@ -234,7 +234,7 @@ a {
 
 	.recent p {
 		width: 90%;
-		margin: 5%;
+		margin: 35px auto;
 	}
 
 	.latest {
