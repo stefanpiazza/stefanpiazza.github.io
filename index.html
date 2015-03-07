@@ -1,0 +1,146 @@
+<html>
+
+<head>
+	<title>- Stefan Piazza -</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/style3.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.swipebox.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/swipebox.min.css">	
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="section-1" class="section">
+			<div class="container">
+				<div id='header-1' class="header">
+					<h1 id='title-1'>Stefan Piazza</h1>
+					<p id='sub-title-1'>Front End Developer - London</p>
+					<a id='github-1' href="https://github.com/stefanpiazza" class="icon fa fa-github"></a>
+					<a id='linkedin-1' href="http://uk.linkedin.com/in/stefanpiazza" class="icon fa fa-linkedin"></a>
+					<a id='email-1' href="mailto:contact@stefanpiazza.com" class="icon fa fa-envelope"></a>		
+				</div>
+				<a href="#section-2" id="next-1" class="icon inverse-icon fa fa-arrow-down next"></a>
+			</div>
+		</div>
+
+		<div id="section-2" class="section">
+			<div class="container">
+				<div class="sub-header">
+					<h2 class="inverse">Latest Work</h2>
+				</div>
+				<div class="recent">
+					<h3>Nike Fuelband</h3>
+					<p>Nike Fuelband Advert - HTML5 device orientation event to provide tilt controls and use of masks for transitions.</p>
+
+					<a rel="gallery-1" href="img/images_lrg_nike1.jpg" class="swipebox"><div id="latest-1" class="latest"><img src="img/grid_nike.jpg"></div></a>
+					<a rel="gallery-1" href="img/images_lrg_nike2.jpg" class="swipebox"></a>
+					<a rel="gallery-1" href="img/images_lrg_nike3.jpg" class="swipebox"></a>
+				</div>
+				<div class="recent">
+					<h3>Halo: The Master Chief Collection</h3>
+					<p>Halo: The Master Chief Collection Advert - Forced landscape orientation advert; featuring fullscreen video and image comparison slider.</p>
+					
+					<a rel="gallery-2" href="img/images_responsive_lrg_halo_land1.jpg" class="swipebox"><div id="latest-2" class="latest"><img src="img/grid_halo.jpg"></div></a>
+					<a rel="gallery-2" href="img/images_responsive_lrg_halo_land2.jpg" class="swipebox"></a>
+					<a rel="gallery-2" href="img/images_responsive_lrg_halo_land3.jpg" class="swipebox"></a>
+					<a rel="gallery-2" href="img/images_responsive_lrg_halo_land4.jpg" class="swipebox"></a>
+				</div>	
+				<div class="recent">
+					<h3>Responsive Framework</h3>		
+					<p>Responsive Framework Products - Four templated adverts built using the contain algorithm.</p>	
+					
+					<a rel="gallery-3" href="img/images_responsive_lrg_xmen_land.jpg" class="swipebox"><div id="latest-3" class="latest"><img src="img/grid_responsive.jpg"></div></a>
+					<a rel="gallery-3" href="img/images_responsive_lrg_xmen_port.jpg" class="swipebox"></a>
+					<a rel="gallery-3" href="img/images_responsive_lrg_adidas_land.jpg" class="swipebox"></a>
+					<a rel="gallery-3" href="img/images_responsive_lrg_adidas_port.jpg" class="swipebox"></a>
+				</div>			
+			</div>
+		</div>	
+
+		<div id="section-3" class="section">
+			<div class="container">
+				<div class="sub-header">
+					<h2 class="inverse">Peronsal Projects</h2>
+				</div>
+				<div class="recent">
+					<h3>Asset Loader</h3>
+					<p>Javascript asset loader - implemenation uses prototyping pattern.</p>
+
+					<a href="https://github.com/stefanpiazza/asset-loader"><div id="latest-4" class="latest"><img src="img/grid_pers1.jpg"></div></a>				
+				</div>
+
+				<div class="recent">
+					<h3>Contain Algorithm</h3>		
+					<p>Responsive framework foundation - algorithm to determine optimal container size given viewport dimensions.</p>		
+					
+					<a href="https://github.com/stefanpiazza/contain-algorithm"><div id="latest-5" class="latest"><img src="img/grid_pers3.jpg"></div></a>
+				</div>
+
+				<div class="recent">
+					<h3>Gyro Yoyo</h3>
+					<p>Looping spritesheet animation - controlled by phones' gamma value.</p>
+
+					<a href="https://github.com/stefanpiazza/gyro-yoyo"><div id="latest-6" class="latest"><img src="img/grid_pers2.jpg"></div></a>
+				</div>	
+			</div>
+		</div>	
+		<footer>
+			<div class='container'>
+				<a id='github-2' href="https://github.com/stefanpiazza" class="icon fa fa-github"></a>
+				<a id='linkedin-2' href="http://uk.linkedin.com/in/stefanpiazza" class="icon fa fa-linkedin"></a>
+				<a id='email-2' href="mailto:contact@stefanpiazza.com" class="icon fa fa-envelope"></a>	
+				<a href="#section-1" id="previous-1" class="icon fa fa-arrow-up"></a>
+			</div>
+		</footer>	
+	</div>
+</body>
+
+<script type="text/javascript">
+	window.onload = function () {
+		document.body.style.webkitAnimation = "fadeIn 500ms linear forwards";
+		setTimeout(function () {
+			document.getElementById('header-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
+			setTimeout(function () {
+				document.getElementById('title-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
+				setTimeout(function () {
+					document.getElementById('sub-title-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
+					setTimeout(function () {
+						document.getElementById('github-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
+						setTimeout(function () {
+							document.getElementById('linkedin-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
+							setTimeout(function () {
+								document.getElementById('email-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
+							}, 250);
+						}, 250);
+					}, 250);
+				}, 250);
+			}, 250);
+		}.bind(this), 500);
+	}
+
+	$("a[href^='#']").on("click", function(event) {
+
+	    var target = $( $(this).attr("href") );
+
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('body').animate({
+	            scrollTop: target.offset().top
+	        }, 500);
+	    }
+
+	});
+
+	(function($) {
+		$('.swipebox').swipebox();
+	})(jQuery);
+</script>
+
+</html>
