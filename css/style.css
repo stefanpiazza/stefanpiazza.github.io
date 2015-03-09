@@ -163,6 +163,7 @@ a {
 }
 
 .recent p {
+	text-transform: none;
 	margin: 5% 0 10% 0;
 }
 
