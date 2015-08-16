@@ -1,13 +1,14 @@
 <html>
 
 <head>
-	<title>- Stefan Piazza -</title>
+	<title>Stefan Piazza</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/devices.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
 
 	<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon" />
@@ -19,138 +20,162 @@
 	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" />
 	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
 	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" />
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/jquery.swipebox.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/swipebox.min.css">	
 </head>
 
 <body>
-	<div class="wrapper">
-		<div id="section-1" class="section">
-			<div class="container">
-				<div id='header-1' class="header">
-					<h1 id='title-1'>Stefan Piazza</h1>
-					<p id='sub-title-1'>Front End Developer - London</p>
-					<a id='github-1' href="https://github.com/stefanpiazza" class="icon fa fa-github"></a>
-					<a id='linkedin-1' href="http://uk.linkedin.com/in/stefanpiazza" class="icon fa fa-linkedin"></a>
-					<a id='email-1' href="mailto:contact@stefanpiazza.com" class="icon fa fa-envelope"></a>		
-				</div>
-				<a href="#section-2" id="next-1" class="icon inverse-icon fa fa-arrow-down next"></a>
+	<div class='sp-cover sp-image-1'>
+		<div class='sp-container'>
+			<div class='sp-header'>
+				<h1 class='sp-cover-title'>Stefan Piazza</h1>
+				<p class='sp-cover-subtitle'>Front End Developer - London</p>	
+				<a class="sp-cover-icon fa fa-envelope" href="mailto:contact@stefanpiazza.com"></a>						
+				<a class="sp-cover-icon fa fa-github" href="mailto:contact@stefanpiazza.com"></a>						
+				<a class="sp-cover-icon fa fa-linkedin" href="mailto:contact@stefanpiazza.com"></a>						
 			</div>
-		</div>
-
-		<div id="section-2" class="section">
-			<div class="container">
-				<div class="sub-header">
-					<h2 class="inverse">Latest Work</h2>
-				</div>
-				<div class="recent">
-					<h3>Nike Fuelband</h3>
-					<p>Nike Fuelband Advert - HTML5 device orientation event to provide tilt controls and use of masks for transitions.</p>
-
-					<a rel="gallery-1" href="img/images_lrg_nike1.jpg" class="swipebox"><div id="latest-1" class="latest"><img src="img/grid_nike.jpg"></div></a>
-					<a rel="gallery-1" href="img/images_lrg_nike2.jpg" class="swipebox"></a>
-					<a rel="gallery-1" href="img/images_lrg_nike3.jpg" class="swipebox"></a>
-				</div>
-				<div class="recent">
-					<h3>Halo: The Master Chief Collection</h3>
-					<p>Halo: The Master Chief Collection Advert - Forced landscape orientation advert; featuring fullscreen video and image comparison slider.</p>
-					
-					<a rel="gallery-2" href="img/images_responsive_lrg_halo_land1.jpg" class="swipebox"><div id="latest-2" class="latest"><img src="img/grid_halo.jpg"></div></a>
-					<a rel="gallery-2" href="img/images_responsive_lrg_halo_land2.jpg" class="swipebox"></a>
-					<a rel="gallery-2" href="img/images_responsive_lrg_halo_land3.jpg" class="swipebox"></a>
-					<a rel="gallery-2" href="img/images_responsive_lrg_halo_land4.jpg" class="swipebox"></a>
-				</div>	
-				<div class="recent">
-					<h3>Responsive Framework</h3>		
-					<p>Responsive Framework Products - Four templated adverts built using the contain algorithm.</p>	
-					
-					<a rel="gallery-3" href="img/images_responsive_lrg_xmen_land.jpg" class="swipebox"><div id="latest-3" class="latest"><img src="img/grid_responsive.jpg"></div></a>
-					<a rel="gallery-3" href="img/images_responsive_lrg_xmen_port.jpg" class="swipebox"></a>
-					<a rel="gallery-3" href="img/images_responsive_lrg_adidas_land.jpg" class="swipebox"></a>
-					<a rel="gallery-3" href="img/images_responsive_lrg_adidas_port.jpg" class="swipebox"></a>
-				</div>			
-			</div>
-		</div>	
-
-		<div id="section-3" class="section">
-			<div class="container">
-				<div class="sub-header">
-					<h2 class="inverse">Peronsal Projects</h2>
-				</div>
-				<div class="recent">
-					<h3>Asset Loader</h3>
-					<p>Javascript asset loader - implemenation uses prototyping pattern.</p>
-
-					<a href="https://github.com/stefanpiazza/asset-loader"><div id="latest-4" class="latest"><img src="img/grid_pers1.jpg"></div></a>				
-				</div>
-
-				<div class="recent">
-					<h3>Contain Algorithm</h3>		
-					<p>Responsive framework foundation - algorithm to determine optimal container size given viewport dimensions.</p>		
-					
-					<a href="https://github.com/stefanpiazza/contain-algorithm"><div id="latest-5" class="latest"><img src="img/grid_pers3.jpg"></div></a>
-				</div>
-
-				<div class="recent">
-					<h3>Gyro Yoyo</h3>
-					<p>Looping spritesheet animation - controlled by phones' gamma value.</p>
-
-					<a href="https://github.com/stefanpiazza/gyro-yoyo"><div id="latest-6" class="latest"><img src="img/grid_pers2.jpg"></div></a>
-				</div>	
-			</div>
-		</div>	
-		<footer>
-			<div class='container'>
-				<a id='github-2' href="https://github.com/stefanpiazza" class="icon fa fa-github"></a>
-				<a id='linkedin-2' href="http://uk.linkedin.com/in/stefanpiazza" class="icon fa fa-linkedin"></a>
-				<a id='email-2' href="mailto:contact@stefanpiazza.com" class="icon fa fa-envelope"></a>	
-				<a href="#section-1" id="previous-1" class="icon fa fa-arrow-up"></a>
-			</div>
-		</footer>	
+		</div>		
 	</div>
+
+	<div class='sp-section'>
+		<div class='sp-container'>
+			<h2 class='sp-section-title'>Latest Work</h2>
+			<p class='sp-section-content'>For the past few years, I have been working predominantly in mobile, using HTML, CSS and Javascript to craft interactive experiences for a wide variety of handsets.</p>
+			<p class='sp-section-content'>Recently, I have been building a selection of product based solutions.</p>
+			<p class='sp-section-content'>Try one of my recent creations below.</p>
+			<div class='sp-container-flex'>
+				<div class='sp-flex-2'>
+			 		<div class="marvel-device nexus5">
+					    <div class="top-bar"></div>
+					    <div class="sleep"></div>
+					    <div class="volume"></div>
+					    <div class="camera"></div>
+					    <div class="screen">
+					    	<iframe class='sp-advert' scrolling='no' marginheight='0' marginwidth='0'></iframe>
+					    </div>
+					</div>	
+				</div>
+				<div class='sp-flex-2'>
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("http://4sa.s3.amazonaws.com/staging/encore-scratch-reveal/overlay/standard/sample.html", 0)'></div>
+					<h3 class='sp-section-subtitle'>Scratch To Reveal Product</h3>
+					<p class='sp-section-content'>Interactable canvas with XOR gate to reveal hidden image.</p>	
+
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("http://4sa.s3.amazonaws.com/staging/encore-enhance/overlay/standard/sample.html", 0)'></div>
+					<h3 class='sp-section-subtitle'>Image Comparison Product</h3>
+					<p class='sp-section-content'>Draggable slider with opening animation to highlight differences between two images.</p>
+
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("http://4sa.s3.amazonaws.com/staging/encore-tryptic/overlay/standard/sample.html", 0)'></div>
+					<h3 class='sp-section-subtitle'>Video And Gallery Product</h3>
+					<p class='sp-section-content'>Video and image gallery combination tailored to film releases.</p>									
+
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("http://4sa.s3.amazonaws.com/staging/encore-cube/overlay/standard/sample.html", 0)'></div>
+					<h3 class='sp-section-subtitle'>3D Cube Product</h3>
+					<p class='sp-section-content'>A new spin on the traditional image carousel, featuring four interchangeable faces.</p>									
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<div class='sp-section sp-image-2'>
+		<div class='sp-container sp-highlight'>
+			<h2 class='sp-section-title sp-inverse'>About Myself</h2>
+			<h3 class='sp-section-subtitle sp-inverse'>Expierence</h3>
+			<p class='sp-section-content sp-inverse'>I'm currently a developer at Opera Mediaworks EMEA in London.</p>									
+			<p class='sp-section-content sp-inverse'>Before that, I read Computer Science at the University of Leeds.</p>									
+			<h3 class='sp-section-subtitle sp-inverse'>Skills</h3>
+			<p class='sp-section-content sp-inverse'>I predominantly work with HTML, CSS and Javascript.</p>									
+			<p class='sp-section-content sp-inverse'>I've recently been working with Meteor to build web apps.</p>											
+		</div>		
+	</div>	
+
+	<div class='sp-section'>
+		<div class='sp-container'>
+			<h2 class='sp-section-title'>Personal Projects</h2>
+			<p class='sp-section-content'>My personal projects range from CSS effects to Javascript modules with an array of functionaility.</p>		
+			<p class='sp-section-content'>I'm a big fan of prototyping, whether it's trying a new idea or seeing how I would recreate an exisiting one. I never view the time as wasted as it oftens feeds back in to my professional work.</p>
+			<p class='sp-section-content'>Try one of my recent creations below.</p>
+			<div class='sp-container-flex'>
+				<div class='sp-flex-2'>			
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/parallax-scrolling-background/", 1)'></div>
+					<h3 class='sp-section-subtitle'>Parallax Scrolling Background</h3>
+					<p class='sp-section-content'>Three layered parallax effect of moving trees with falling snow.</p>			
+
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/image-carousel/", 1)'></div>
+					<h3 class='sp-section-subtitle'>Image Carousel Module</h3>
+					<p class='sp-section-content'>Flexible carousel module designed to emulate native mobile functionality.</p>									
+
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/2-blocks/", 1)'></div>
+					<h3 class='sp-section-subtitle'>2 Blocks</h3>
+					<p class='sp-section-content'>Two block element display with orientation dependent interface for optimal user experience.</p>
+
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/image-curtain/", 1)'></div>
+					<h3 class='sp-section-subtitle'>Image Curtain</h3>
+					<p class='sp-section-content'>Three layered image curtain controlled by swipe gestures.</p>									
+
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/pure-css-mask/", 1)'></div>
+					<h3 class='sp-section-subtitle'>Pure CSS Mask</h3>
+					<p class='sp-section-content'>Alternative approach to masking using a webkit gradient over a traditional image.</p>									
+				</div>
+
+				<div class='sp-flex-2'>
+					<div class="marvel-device s5 white">
+					    <div class="top-bar"></div>
+					    <div class="sleep"></div>
+					    <div class="camera"></div>
+					    <div class="sensor"></div>
+					    <div class="speaker"></div>
+					    <div class="screen">
+					    	<iframe class='sp-advert' scrolling='no' marginheight='0' marginwidth='0'></iframe>
+					    </div>
+					    <div class="home"></div>
+					</div>						
+				</div>				
+			</div>
+		</div>	
+	</div>
+
+	<footer class='sp-footer'>
+		<div class='sp-container'>
+			<a class="sp-footer-icon fa fa-envelope" href="mailto:contact@stefanpiazza.com"></a>						
+			<a class="sp-footer-icon fa fa-github" href="mailto:contact@stefanpiazza.com"></a>						
+			<a class="sp-footer-icon fa fa-linkedin" href="mailto:contact@stefanpiazza.com"></a>				
+		</div>
+	</footer>
+
+	<div class='sp-disable'></div>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+
+	<script type="text/javascript">
+		var disable = document.getElementsByClassName('sp-disable')[0];
+
+		var coverTitle = document.getElementsByClassName('sp-cover-title')[0];
+		var subTitle = document.getElementsByClassName('sp-cover-subtitle')[0];
+
+		var coverIcon1 = document.getElementsByClassName('sp-cover-icon')[0];
+		var coverIcon2 = document.getElementsByClassName('sp-cover-icon')[1];
+		var coverIcon3 = document.getElementsByClassName('sp-cover-icon')[2];
+
+		this.loadAdvert = function (url, i) {
+			if (window.innerWidth < 960) {
+				window.open(url, '_blank')
+			}
+
+			else {
+				document.getElementsByClassName('sp-advert')[i].src = url;
+			}
+		};	
+
+		window.addEventListener('load', function () {
+			TweenLite.to(disable, 0.3, {opacity: 0});
+			TweenLite.to(disable, 0.3, {display: 'none', delay: 0.3});
+
+			TweenLite.to(coverTitle, 0.3, {opacity: 1, y: 0, delay: 0.4});
+			TweenLite.to(subTitle, 0.3, {opacity: 1, y: 0, delay: 0.4});
+			TweenLite.to(coverIcon1, 0.4, {opacity: 1, y: 0, delay: 0.7});
+			TweenLite.to(coverIcon2, 0.4, {opacity: 1, y: 0, delay: 0.9});
+			TweenLite.to(coverIcon3, 0.4, {opacity: 1, y: 0, delay: 1.1});
+		});
+	</script>
 </body>
-
-<script type="text/javascript">
-	window.onload = function () {
-		document.body.style.webkitAnimation = "fadeIn 500ms linear forwards";
-		setTimeout(function () {
-			document.getElementById('header-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
-			setTimeout(function () {
-				document.getElementById('title-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
-				setTimeout(function () {
-					document.getElementById('sub-title-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
-					setTimeout(function () {
-						document.getElementById('github-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
-						setTimeout(function () {
-							document.getElementById('linkedin-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
-							setTimeout(function () {
-								document.getElementById('email-1').style.webkitAnimation = "fadeInUp 1000ms ease forwards";
-							}, 250);
-						}, 250);
-					}, 250);
-				}, 250);
-			}, 250);
-		}.bind(this), 500);
-	}
-
-	$("a[href^='#']").on("click", function(event) {
-
-	    var target = $( $(this).attr("href") );
-
-	    if( target.length ) {
-	        event.preventDefault();
-	        $('body').animate({
-	            scrollTop: target.offset().top
-	        }, 500);
-	    }
-
-	});
-
-	(function($) {
-		$('.swipebox').swipebox();
-	})(jQuery);
-</script>
-
 </html>
