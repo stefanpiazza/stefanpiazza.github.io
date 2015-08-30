@@ -32,6 +32,8 @@
 				<a class="sp-cover-icon fa fa-github" href="https://github.com/stefanpiazza"></a>						
 				<a class="sp-cover-icon fa fa-linkedin" href="https://uk.linkedin.com/in/stefanpiazza"></a>						
 			</div>
+
+			<div class="sp-cover-more fa fa-angle-double-down" onclick='scrollTo(document.body, window.innerHeight, 1000)'></div>						
 		</div>		
 	</div>
 
@@ -54,6 +56,14 @@
 					</div>	
 				</div>
 				<div class='sp-flex-2'>
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-gyro-video/overlay/standard/sample.html", 0)'></div>
+					<h3 class='sp-section-subtitle'>Gyro Video Product</h3>
+					<p class='sp-section-content'>Video image sequence controlled via gyroscope.</p>	
+
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-gyro-pan/overlay/standard/sample.html", 0)'></div>
+					<h3 class='sp-section-subtitle'>Gyro Pan Product</h3>
+					<p class='sp-section-content'>Panoramic image utilising tilt functionality to pan.</p>	
+
 					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-scratch-reveal/overlay/standard/sample.html", 0)'></div>
 					<h3 class='sp-section-subtitle'>Scratch To Reveal Product</h3>
 					<p class='sp-section-content'>Interactable canvas with XOR gate to reveal hidden image.</p>	
@@ -62,13 +72,9 @@
 					<h3 class='sp-section-subtitle'>Image Comparison Product</h3>
 					<p class='sp-section-content'>Draggable slider with opening animation to highlight differences between two images.</p>
 
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-tryptic/overlay/standard/sample.html", 0)'></div>
-					<h3 class='sp-section-subtitle'>Video And Gallery Product</h3>
-					<p class='sp-section-content'>Video and image gallery combination tailored to film releases.</p>									
-
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-cube/overlay/standard/sample.html", 0)'></div>
-					<h3 class='sp-section-subtitle'>3D Cube Product</h3>
+ <!-- 					<h3 class='sp-section-subtitle'>3D Cube Product</h3>
 					<p class='sp-section-content'>A new spin on the traditional image carousel, featuring four interchangeable faces.</p>									
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-cube/overlay/standard/sample.html", 0)'></div> -->
 				</div>
 			</div>
 		</div>	
@@ -94,25 +100,21 @@
 			<p class='sp-section-content'>Try one of my recent creations below.</p>
 			<div class='sp-container-flex'>
 				<div class='sp-flex-2'>			
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/parallax-scrolling-background/", 1)'></div>
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/expanding-sections/", 1)'></div>
+					<h3 class='sp-section-subtitle'>Expanding Sections</h3>
+					<p class='sp-section-content'>Four sectioned layout that expands to fullscreen on interaction.</p>
+
+					<div class='sp-section-icon fa fa-code' onclick='https://stefanpiazza.github.io/parallax-scrolling-background/", 1)'></div>
 					<h3 class='sp-section-subtitle'>Parallax Scrolling Background</h3>
-					<p class='sp-section-content'>Three layered parallax effect of moving trees with falling snow.</p>			
+					<p class='sp-section-content'>Three layered parallax effect of moving trees with falling snow.</p>
 
 					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/image-carousel/", 1)'></div>
 					<h3 class='sp-section-subtitle'>Image Carousel Module</h3>
 					<p class='sp-section-content'>Flexible carousel module designed to emulate native mobile functionality.</p>									
 
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/2-blocks/", 1)'></div>
+					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/2-blocks/", 1)'></div>				
 					<h3 class='sp-section-subtitle'>2 Blocks</h3>
 					<p class='sp-section-content'>Two block element display with orientation dependent interface for optimal user experience.</p>
-
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/image-curtain/", 1)'></div>
-					<h3 class='sp-section-subtitle'>Image Curtain</h3>
-					<p class='sp-section-content'>Three layered image curtain controlled by swipe gestures.</p>									
-
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/pure-css-mask/", 1)'></div>
-					<h3 class='sp-section-subtitle'>Pure CSS Mask</h3>
-					<p class='sp-section-content'>Alternative approach to masking using a webkit gradient over a traditional image.</p>									
 				</div>
 
 				<div class='sp-flex-2'>
@@ -150,13 +152,15 @@
 		var disable = document.getElementsByClassName('sp-disable')[0];
 
 		var coverTitle = document.getElementsByClassName('sp-cover-title')[0];
-		var subTitle = document.getElementsByClassName('sp-cover-subtitle')[0];
+		var coverSubtitle = document.getElementsByClassName('sp-cover-subtitle')[0];
 
 		var coverIcon1 = document.getElementsByClassName('sp-cover-icon')[0];
 		var coverIcon2 = document.getElementsByClassName('sp-cover-icon')[1];
 		var coverIcon3 = document.getElementsByClassName('sp-cover-icon')[2];
+		
+		var coverMore = document.getElementsByClassName('sp-cover-more')[0];
 
-		this.loadAdvert = function (url, i) {
+		function loadAdvert(url, i) {
 			if (window.innerWidth < 960) {
 				window.open(url, '_blank')
 			}
@@ -166,15 +170,44 @@
 			}
 		};	
 
-		window.addEventListener('load', function () {
-			TweenLite.to(disable, 0.3, {opacity: 0});
-			TweenLite.to(disable, 0.3, {display: 'none', delay: 0.3});
+		function scrollTo(element, to, duration) {
+		    var start = element.scrollTop,
+		        change = to - start,
+		        increment = 20;
 
-			TweenLite.to(coverTitle, 0.3, {opacity: 1, y: 0, delay: 0.4});
-			TweenLite.to(subTitle, 0.3, {opacity: 1, y: 0, delay: 0.4});
-			TweenLite.to(coverIcon1, 0.4, {opacity: 1, y: 0, delay: 0.7});
-			TweenLite.to(coverIcon2, 0.4, {opacity: 1, y: 0, delay: 0.9});
-			TweenLite.to(coverIcon3, 0.4, {opacity: 1, y: 0, delay: 1.1});
+		    var animateScroll = function(elapsedTime) {        
+		        elapsedTime += increment;
+		        var position = easeInOut(elapsedTime, start, change, duration);                        
+		        element.scrollTop = position; 
+		        if (elapsedTime < duration) {
+		            setTimeout(function() {
+		                animateScroll(elapsedTime);
+		            }, increment);
+		        }
+		    };
+
+		    animateScroll(0);
+		}
+
+		function easeInOut(currentTime, start, change, duration) {
+		    currentTime /= duration / 2;
+		    if (currentTime < 1) {
+		        return change / 2 * currentTime * currentTime + start;
+		    }
+		    currentTime -= 1;
+		    return -change / 2 * (currentTime * (currentTime - 2) - 1) + start;
+		}
+
+		window.addEventListener('load', function () {
+			TweenLite.to(disable, 0.3, {opacity: 0, delay: 0.5});
+			TweenLite.to(disable, 0.3, {display: 'none', delay: 0.8});
+
+			TweenLite.to(coverTitle, 0.3, {opacity: 1, y: 0, delay: 0.9});
+			TweenLite.to(coverSubtitle, 0.3, {opacity: 1, y: 0, delay: 0.9});
+			TweenLite.to(coverIcon1, 0.4, {opacity: 1, y: 0, delay: 1.2});
+			TweenLite.to(coverIcon2, 0.4, {opacity: 1, y: 0, delay: 1.4});
+			TweenLite.to(coverIcon3, 0.4, {opacity: 1, y: 0, delay: 1.6});
+			TweenLite.to(coverMore, 0.4, {opacity: 1, y: 0, delay: 1.8});
 		});
 	</script>
 </body>
