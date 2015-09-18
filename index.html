@@ -20,6 +20,8 @@
 	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" />
 	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
 	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" />
+
+	<script type="text/javascript" src='scripts/skrollr.js'></script>
 </head>
 
 <body>
@@ -45,7 +47,7 @@
 			<p class='sp-section-content'>Try one of my recent creations below.</p>
 			<div class='sp-container-flex'>
 				<div class='sp-flex-2'>
-			 		<div class="marvel-device nexus5">
+			 		<div class="marvel-device nexus5" data-0='opacity:0; transform: translateX(-200px);' data-200-top='opacity:0.99; transform: translateX(0);'>
 					    <div class="top-bar"></div>
 					    <div class="sleep"></div>
 					    <div class="volume"></div>
@@ -55,7 +57,7 @@
 					    </div>
 					</div>	
 				</div>
-				<div class='sp-flex-2'>
+				<div class='sp-flex-2' data-0='opacity:0; transform: translateX(200px);' data-200-top='opacity:0.99; transform: translateX(0);'>
 					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-gyro-parallax/overlay/standard/sample.html", 0)'></div>
 					<h3 class='sp-section-subtitle'>Gyro Parallax Product</h3>
 					<p class='sp-section-content'>Three layered parallax in X and Y axis, controlled using tilt functionality.</p>	
@@ -103,7 +105,7 @@
 			<p class='sp-section-content'>I'm a big fan of prototyping, whether it's trying a new idea or seeing how I would recreate an exisiting one. I never view the time as wasted as it oftens feeds back in to my professional work.</p>
 			<p class='sp-section-content'>Try one of my recent creations below.</p>
 			<div class='sp-container-flex'>
-				<div class='sp-flex-2'>			
+				<div class='sp-flex-2' data-0='opacity:0; transform: translateX(-200px);' data-200-top='opacity:0.99; transform: translateX(0);'>			
 					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/expanding-sections/", 1)'></div>
 					<h3 class='sp-section-subtitle'>Expanding Sections</h3>
 					<p class='sp-section-content'>Four sectioned layout that expands to fullscreen on interaction.</p>
@@ -121,7 +123,7 @@
 					<p class='sp-section-content'>Two block element display with orientation dependent interface for optimal user experience.</p>
 				</div>
 
-				<div class='sp-flex-2'>
+				<div class='sp-flex-2' data-0='opacity:0; transform: translateX(200px);' data-200-top='opacity:0.99; transform: translateX(0);'>
 					<div class="marvel-device s5 white">
 					    <div class="top-bar"></div>
 					    <div class="sleep"></div>
@@ -153,6 +155,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
 
 	<script type="text/javascript">
+		if (window.innerWidth >= 960) {
+			var skrollr = skrollr.init({
+				forceHeight: false
+			});
+		}
+
 		var disable = document.getElementsByClassName('sp-disable')[0];
 
 		var coverTitle = document.getElementsByClassName('sp-cover-title')[0];
