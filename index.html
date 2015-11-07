@@ -20,8 +20,6 @@
 	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png" />
 	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png" />
 	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png" />
-
-	<script type="text/javascript" src='scripts/skrollr.js'></script>
 </head>
 
 <body>
@@ -35,9 +33,13 @@
 				<a class="sp-cover-icon fa fa-linkedin" href="https://uk.linkedin.com/in/stefanpiazza"></a>						
 			</div>
 
-			<div class="sp-cover-more fa fa-angle-double-down" onclick='scrollTo(document.body, window.innerHeight, 1000)'></div>						
+			<div class="sp-cover-more fa fa-angle-double-down" onclick='scrollTo(document.body, window.innerHeight*1.5, 1000)'></div>						
 		</div>		
 	</div>
+
+	<div class='sp-spacer'></div>
+
+	<div id='trigger-1'></div>
 
 	<div class='sp-section'>
 		<div class='sp-container'>
@@ -45,9 +47,12 @@
 			<p class='sp-section-content'>For the past few years, I have been working predominantly in mobile, using HTML, CSS and Javascript to craft interactive experiences for a wide variety of handsets.</p>
 			<p class='sp-section-content'>Recently, I have been building a selection of product based solutions.</p>
 			<p class='sp-section-content'>Try one of my recent creations below.</p>
+
+			<div id='trigger-2'></div>		
+
 			<div class='sp-container-flex'>
 				<div class='sp-flex-2'>
-			 		<div class="marvel-device nexus5" data-0='opacity:0; transform: translateX(-200px);' data-300-top='opacity:0.99; transform: translateX(0);'>
+			 		<div class="marvel-device nexus5">
 					    <div class="top-bar"></div>
 					    <div class="sleep"></div>
 					    <div class="volume"></div>
@@ -57,30 +62,42 @@
 					    </div>
 					</div>	
 				</div>
-				<div class='sp-flex-2' data-0='opacity:0; transform: translateX(200px);' data-300-top='opacity:0.99; transform: translateX(0);'>
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-poll/overlay/standard/sample.html", 0)'></div>
-					<h3 class='sp-section-subtitle'>Binary Poll Product</h3>
-					<p class='sp-section-content'>Asynchronous poll updated with user vote.</p>	
+				<div class='sp-flex-2'>
+					<div class='sp-section-project-1'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-poll/overlay/standard/sample.html", 0)'></div>
+						<h3 class='sp-section-subtitle'>Binary Poll Product</h3>
+						<p class='sp-section-content'>Asynchronous poll updated with user vote.</p>	
+					</div>
 
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-gyro-parallax/overlay/standard/sample.html", 0)'></div>
-					<h3 class='sp-section-subtitle'>Gyro Parallax Product</h3>
-					<p class='sp-section-content'>Three layered parallax in X and Y axis, controlled using tilt functionality.</p>	
+					<div class='sp-section-project-1'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-gyro-parallax/overlay/standard/sample.html", 0)'></div>
+						<h3 class='sp-section-subtitle'>Gyro Parallax Product</h3>
+						<p class='sp-section-content'>Three layered parallax in X and Y axis, controlled using tilt functionality.</p>	
+					</div>
 
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-gyro-video/overlay/standard/sample.html", 0)'></div>
-					<h3 class='sp-section-subtitle'>Gyro Video Product</h3>
-					<p class='sp-section-content'>Video image sequence controlled via gyroscope.</p>	
+					<div class='sp-section-project-1'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-gyro-video/overlay/standard/sample.html", 0)'></div>
+						<h3 class='sp-section-subtitle'>Gyro Video Product</h3>
+						<p class='sp-section-content'>Video image sequence controlled via gyroscope.</p>	
+					</div>
 
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-gyro-pan/overlay/standard/sample.html", 0)'></div>
-					<h3 class='sp-section-subtitle'>Gyro Pan Product</h3>
-					<p class='sp-section-content'>Panoramic image utilising tilt functionality to pan.</p>	
+					<div class='sp-section-project-1'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-gyro-pan/overlay/standard/sample.html", 0)'></div>
+						<h3 class='sp-section-subtitle'>Gyro Pan Product</h3>
+						<p class='sp-section-content'>Panoramic image utilising tilt functionality to pan.</p>	
+					</div>
 
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-scratch-reveal/overlay/standard/sample.html", 0)'></div>
-					<h3 class='sp-section-subtitle'>Scratch To Reveal Product</h3>
-					<p class='sp-section-content'>Interactable canvas with XOR gate to reveal hidden image.</p>	
-
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-enhance/overlay/standard/sample.html", 0)'></div>
-					<h3 class='sp-section-subtitle'>Image Comparison Product</h3>
-					<p class='sp-section-content'>Draggable slider with opening animation to highlight differences between two images.</p>
+					<div class='sp-section-project-1'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-scratch-reveal/overlay/standard/sample.html", 0)'></div>
+						<h3 class='sp-section-subtitle'>Scratch To Reveal Product</h3>
+						<p class='sp-section-content'>Interactable canvas with XOR gate to reveal hidden image.</p>	
+					</div>
+					
+					<div class='sp-section-project-1'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://4sa.s3.amazonaws.com/staging/encore-enhance/overlay/standard/sample.html", 0)'></div>
+						<h3 class='sp-section-subtitle'>Image Comparison Product</h3>
+						<p class='sp-section-content'>Draggable slider with opening animation to highlight differences between two images.</p>
+					</div>
 				</div>
 			</div>
 		</div>	
@@ -96,7 +113,7 @@
 			<p class='sp-section-content sp-inverse'>I predominantly work with HTML, CSS and Javascript.</p>									
 			<p class='sp-section-content sp-inverse'>I've recently been working with Meteor to build web apps.</p>											
 		</div>		
-	</div>	
+	</div>
 
 	<div class='sp-section'>
 		<div class='sp-container'>
@@ -104,34 +121,49 @@
 			<p class='sp-section-content'>My personal projects range from CSS effects to Javascript modules with an array of functionaility.</p>		
 			<p class='sp-section-content'>I'm a big fan of prototyping, whether it's trying a new idea or seeing how I would recreate an exisiting one. I never view the time as wasted as it oftens feeds back in to my professional work.</p>
 			<p class='sp-section-content'>Try one of my recent creations below.</p>
+
+			<div id='trigger-3'></div>			
+
 			<div class='sp-container-flex'>
-				<div class='sp-flex-2' data-0='opacity:0; transform: translateX(-200px);' data-300-top='opacity:0.99; transform: translateX(0);'>			
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/animated-bar-charts/", 1)'></div>
-					<h3 class='sp-section-subtitle'>Animated Bar Charts</h3>
-					<p class='sp-section-content'>Experimentation using chart.js to display information dynamically.</p>
+				<div class='sp-flex-2'>	
+					<div class='sp-section-project-2'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/animated-bar-charts/", 1)'></div>
+						<h3 class='sp-section-subtitle'>Animated Bar Charts</h3>
+						<p class='sp-section-content'>Experimentation using chart.js to display information dynamically.</p>
+					</div>
 
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/fixed-background/", 1)'></div>
-					<h3 class='sp-section-subtitle'>Fixed Background</h3>
-					<p class='sp-section-content'>Three sectioned layout with fixed a positioned background that changes image per section.</p>
-
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/expanding-sections/", 1)'></div>
-					<h3 class='sp-section-subtitle'>Expanding Sections</h3>
-					<p class='sp-section-content'>Four sectioned layout that expands to fullscreen on interaction.</p>
-
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/parallax-scrolling-background/", 1)'></div>
-					<h3 class='sp-section-subtitle'>Parallax Scrolling Background</h3>
-					<p class='sp-section-content'>Three layered parallax effect of moving trees with falling snow.</p>
-
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/image-carousel/", 1)'></div>
-					<h3 class='sp-section-subtitle'>Image Carousel Module</h3>
-					<p class='sp-section-content'>Flexible carousel module designed to emulate native mobile functionality.</p>									
-
-					<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/dual-sections/", 1)'></div>				
-					<h3 class='sp-section-subtitle'>Dual Sections</h3>
-					<p class='sp-section-content'>Two block element display with orientation dependent interface for optimal user experience.</p>
+					<div class='sp-section-project-2'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/fixed-background/", 1)'></div>
+						<h3 class='sp-section-subtitle'>Fixed Background</h3>
+						<p class='sp-section-content'>Three sectioned layout with fixed a positioned background that changes image per section.</p>
+					</div>
+					
+					<div class='sp-section-project-2'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/expanding-sections/", 1)'></div>
+						<h3 class='sp-section-subtitle'>Expanding Sections</h3>
+						<p class='sp-section-content'>Four sectioned layout that expands to fullscreen on interaction.</p>
+					</div>
+					
+					<div class='sp-section-project-2'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/parallax-scrolling-background/", 1)'></div>
+						<h3 class='sp-section-subtitle'>Parallax Scrolling Background</h3>
+						<p class='sp-section-content'>Three layered parallax effect of moving trees with falling snow.</p>
+					</div>
+					
+					<div class='sp-section-project-2'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/image-carousel/", 1)'></div>
+						<h3 class='sp-section-subtitle'>Image Carousel Module</h3>
+						<p class='sp-section-content'>Flexible carousel module designed to emulate native mobile functionality.</p>								
+					</div>	
+					
+					<div class='sp-section-project-2'>
+						<div class='sp-section-icon fa fa-code' onclick='loadAdvert("https://stefanpiazza.github.io/dual-sections/", 1)'></div>				
+						<h3 class='sp-section-subtitle'>Dual Sections</h3>
+						<p class='sp-section-content'>Two block element display with orientation dependent interface for optimal user experience.</p>
+					</div>
 				</div>
 
-				<div class='sp-flex-2' data-0='opacity:0; transform: translateX(200px);' data-300-top='opacity:0.99; transform: translateX(0);'>
+				<div class='sp-flex-2'>
 					<div class="marvel-device s5 white">
 					    <div class="top-bar"></div>
 					    <div class="sleep"></div>
@@ -158,17 +190,52 @@
 
 	<div class='sp-disable'></div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>	
 
 	<script type="text/javascript">
-		if (window.innerWidth >= 960) {
-			var skrollr = skrollr.init({
-				forceHeight: false
-			});
-		}
+		var controller = new ScrollMagic.Controller();
 
+    	new ScrollMagic.Scene({
+    			triggerElement: '#trigger-1',
+    			duration: '200%'
+    		})
+            .setTween(TweenLite.to(".sp-cover", 0.5, {scale: 0.9, transformOrigin: '50% 0%'}))
+    		.setPin('.sp-cover', {pushFollowers: false})
+    		.addTo(controller); 	
+
+    	new ScrollMagic.Scene({
+    			triggerElement: '#trigger-2',
+    			reverse: false
+    		})
+            .setTween(TweenMax.from('.sp-section-project-1', 0.5, {y: '200px', opacity: 0}))
+    		.addTo(controller); 	    	 			
+			
+    	new ScrollMagic.Scene({
+    			triggerElement: '#trigger-2',
+    			reverse: false
+    		})
+            .setTween(TweenMax.from('.nexus5', 0.5, {y: '200px', opacity: 0}))
+    		.addTo(controller); 	
+
+    	new ScrollMagic.Scene({
+    			triggerElement: '#trigger-3',
+    			reverse: false
+    		})
+            .setTween(TweenMax.from('.sp-section-project-2', 0.5, {y: '200px', opacity: 0}))
+    		.addTo(controller); 	    	 			
+			
+    	new ScrollMagic.Scene({
+    			triggerElement: '#trigger-3',
+    			reverse: false
+    		})
+            .setTween(TweenMax.from('.s5', 0.5, {y: '200px', opacity: 0}))
+    		.addTo(controller); 	    			
+			
 		var disable = document.getElementsByClassName('sp-disable')[0];
 
 		var coverTitle = document.getElementsByClassName('sp-cover-title')[0];
