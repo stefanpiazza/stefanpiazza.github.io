@@ -42,7 +42,7 @@
 			</div>
 
 			<div class="sp-cover-more fa fa-angle-double-down" onclick='scrollTo(document.body, window.innerHeight, 1000)'></div>						
-		</div>		
+		</div>
 	</div>
 
 	<div id='trigger-1'></div>
@@ -213,7 +213,7 @@
 	    			triggerElement: '#trigger-1',
 	    			duration: '200%'
 	    		})
-	            .setTween(TweenLite.to(".sp-cover", 0.5, {scale: 0.9, transformOrigin: '50% 0%'}))
+	            .setTween(TweenLite.to(".sp-cover", 0.5, {y: '-10%'}))
 	    		.setPin('.sp-cover', {pushFollowers: false})
 	    		.addTo(controller); 	
 
