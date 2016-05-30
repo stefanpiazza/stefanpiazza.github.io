@@ -1,0 +1,134 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    font-size: 16px;
+
+    // @for $i from 1 through 6 {
+    //     @media screen and (min-width: 380px + ($i * 100)) {
+    //         font-size: 20px + ($i * 4);
+    //     }        
+    // }
+}
+
+.sp-background {
+    width: 100%;
+    height: 100%;
+    background-color: #2f2f2f;
+}
+
+.sp-profile {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);        
+    }
+}
+
+.circle {
+    position: absolute;
+    border: 0.625em solid transparent;
+    border-radius: 50%;  
+    border-top-color: rgba(255, 255, 255, 0.3);
+    border-right-color: transparent;   
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+    border-left-color: rgba(255, 255, 255, 0.3);
+    left: 50%;
+    top: 50%;
+    box-sizing: border-box;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@for $i from 1 through 5 {
+    .circle-#{$i} {
+        $width: 16em + ($i * 2.5);
+        $height: 16em + ($i * 2.5);
+        width: $width;
+        height: $height;
+        animation: spin random(10 * $i) + s linear infinite;
+        margin-left: -$width/2;
+        margin-top: -$height/2;        
+    }
+}
+
+.sp-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    margin: 0.75em 0;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    letter-spacing: 0.35em;
+    margin: 1em 0;
+}
+
+a {
+	color: inherit;
+	fill: inherit;
+}
+
+.sp-social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    
+    .sp-social-item {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        
+        &--codepen {
+            fill: #fff;
+        }    
+        
+        &--github {
+            fill: #fff;
+        }        
+        
+        &--linkedin {
+            fill: #fff;
+        }
+        
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
