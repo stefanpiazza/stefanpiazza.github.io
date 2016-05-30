@@ -1,0 +1,4 @@
+node_modules/*
+!node_modules/@condenastuk
+#Will be potentially using this in the future
+!node_modules/@cnbritain.DS-Store
