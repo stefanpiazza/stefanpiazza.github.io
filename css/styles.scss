@@ -5,19 +5,13 @@ html, body {
 }
 
 body {
-    font-size: 16px;
-
-    // @for $i from 1 through 6 {
-    //     @media screen and (min-width: 380px + ($i * 100)) {
-    //         font-size: 20px + ($i * 4);
-    //     }        
-    // }
+    font-size: 16px; 
 }
 
 .sp-background {
     width: 100%;
     height: 100%;
-    background-color: #2f2f2f;
+    background-color: #141414;
 }
 
 .sp-profile {
@@ -38,10 +32,10 @@ body {
     position: absolute;
     border: 0.625em solid transparent;
     border-radius: 50%;  
-    border-top-color: rgba(255, 255, 255, 0.3);
-    border-right-color: transparent;   
-    border-bottom-color: rgba(255, 255, 255, 0.3);
-    border-left-color: rgba(255, 255, 255, 0.3);
+    border-top-color: rgba(241, 196, 15, 0.3);
+    border-bottom-color: rgba(241, 196, 15, 0.3);
+    border-right-color: rgba(241, 196, 15, 0.3);
+    border-left-color: transparent;
     left: 50%;
     top: 50%;
     box-sizing: border-box;
@@ -76,7 +70,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     white-space: nowrap;
-    color: #fff;
+    color: #f2f2f2;
     text-transform: uppercase;
 }
 
@@ -84,7 +78,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
     letter-spacing: 0.05em;
-    margin: 0.75em 0;
+    margin: 0.75em 0 0.5em;
 }
 
 p {
@@ -111,15 +105,15 @@ a {
         height: 30px;
         
         &--codepen {
-            fill: #fff;
+            fill: #f2f2f2;
         }    
         
         &--github {
-            fill: #fff;
+            fill: #f2f2f2;
         }        
         
         &--linkedin {
-            fill: #fff;
+            fill: #f2f2f2;
         }
         
         svg {
@@ -129,6 +123,18 @@ a {
         
         &:not(:last-child) {
             margin-right: 10px;
+        }
+
+        .hover {
+            &:hover {
+
+            }
+        }
+
+        .touch {
+            &:focus {
+
+            }
         }
     }
 }
