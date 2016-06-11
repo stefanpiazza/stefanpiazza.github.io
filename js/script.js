@@ -40,6 +40,7 @@
         else if (angleY >= maxRotation) { angleY = maxRotation; }
 
         angleXNormalised = angleX / (maxRotation/maxDistance*2);
+        angleYNormalised = angleY / (maxRotation/maxDistance*2);
 
         vendorPrefix(image, 'Transform', 'translate3d(' + (angleXNormalised) + '%, ' + (angleYNormalised) + '%, 0)')
 	}.bind(this));  
