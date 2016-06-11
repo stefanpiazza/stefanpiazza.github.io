@@ -56,6 +56,7 @@
 })();
 
 function vendorPrefix(element, property, value) {
+	element.style[property.toLowerCase()];
 	element.style["webkit" + property] = value;
 	element.style["moz" + property] = value;
 	element.style["ms" + property] = value;

@@ -67,6 +67,11 @@ body {
     @include vendor-prefix(transform, translate(-50%, -50%));
 }
 
+.circle-wrapper {
+    @include vendor-prefix(transition, opacity 1000ms);
+    @include vendor-prefix(transition-delay, 300ms);
+}
+
 .circle {
     position: absolute;
     border: 0.625em solid transparent;
