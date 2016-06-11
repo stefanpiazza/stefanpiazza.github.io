@@ -1,23 +1,11 @@
 (function() {
 	var hasTouch = 'ontouchstart' in window;
 	var anchors = document.querySelectorAll('a');
-	var lazyLoadQueue = document.querySelectorAll('.lazy-load');
-	var lazyLoadCache = {};
+	var lazyLoad = document.querySelectorAll('.lazy-load');
+	var hidden = document.querySelectorAll('.hidden');
 
 	for (var i = 0; i < anchors.length; i++) {
 		(hasTouch ? anchors[i].classList.add('touch') : anchors[i].classList.add('hover'))
-	}
-
-	for (var i = 0; i < lazyLoadQueue.length; i++) {
-		lazyLoadCache[lazyLoadQueue[i].getAttribute('data-original')] = lazyLoadQueue[i];
-	}
-
-	for (var i in lazyLoadCache) {
-		var image = new Image();
-		image.addEventListener('load', function() {
-			lazyLoadCache[this.getAttribute('src')].classList.add('lazy-loaded');
-		});
-		image.src = i;
 	}
 
 	var angleX, 
@@ -35,7 +23,7 @@
         angleXNormalised = (angleX / (window.innerWidth/maxDistance));
         angleYNormalised = (angleY / (window.innerHeight/maxDistance));
 
-        image.style.transform = 'translate3d(' + (angleXNormalised) + '%, ' + (angleYNormalised) + '%, 0)';   
+        vendorPrefix(image, 'Transform', 'translate3d(' + (angleXNormalised) + '%, ' + (angleYNormalised) + '%, 0)')
     }.bind(this));
 
     window.addEventListener('deviceorientation', function(event) {
@@ -53,6 +41,23 @@
 
         angleXNormalised = angleX / (maxRotation/maxDistance*2);
 
-        image.style.transform = 'translate3d(' + (angleXNormalised) + '%, ' + (0) + '%, 0)';     
-	}.bind(this));    
+        vendorPrefix(image, 'Transform', 'translate3d(' + (angleXNormalised) + '%, ' + (angleYNormalised) + '%, 0)')
+	}.bind(this));  
+
+	window.addEventListener('load', function() {
+		for (var i = 0; i < lazyLoad.length; i++) {
+			lazyLoad[i].classList.add('lazy-loaded');
+		}
+
+		for (var i = 0; i < hidden.length; i++) {
+			hidden[i].classList.remove('hidden');
+		}
+	}.bind(this));
 })();
+
+function vendorPrefix(element, property, value) {
+	element.style["webkit" + property] = value;
+	element.style["moz" + property] = value;
+	element.style["ms" + property] = value;
+	element.style["o" + property] = value;
+}
