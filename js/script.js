@@ -34,8 +34,10 @@
 		angleX = (window.innerWidth > window.innerHeight ? event.beta : event.gamma);
         angleY = (window.innerWidth > window.innerHeight ? event.gamma : event.beta);
 
+        angleY -= 35; 
+
     	if (window.orientation === -90) { angleX = angleX * -1; }		
-    	if (window.orientation === 90) { angleY = angleY * -1; }		
+    	if (window.orientation === 90) { angleY = angleY * -1; angleY += 70; }		
        
         if (angleX <= -maxRotation) { angleX = -maxRotation; }  
         else if (angleX >= maxRotation) { angleX = maxRotation; }
