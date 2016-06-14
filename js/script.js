@@ -13,6 +13,7 @@
 		angleXNormalised,
 		angleYNormalised,
 		image = document.querySelector('.sp-background__wrapper'),
+		parallax_layers = document.querySelectorAll('.sp-parallax__layer'),
 		maxDistance = (hasTouch ? 10 : 5),
     	maxRotation = 40;
 
@@ -23,7 +24,10 @@
         angleXNormalised = (angleX / (window.innerWidth/maxDistance));
         angleYNormalised = (angleY / (window.innerHeight/maxDistance));
 
-        vendorPrefix(image, 'Transform', 'translate3d(' + (angleXNormalised) + '%, ' + (angleYNormalised) + '%, 0)')
+        vendorPrefix(image, 'Transform', 'translate3d(' + (angleXNormalised/3) + '%, ' + (angleYNormalised/4) + '%, 0)');
+        vendorPrefix(parallax_layers[2], 'Transform', 'translate3d(' + (angleXNormalised/3) + '%, ' + (angleYNormalised/3) + '%, 0)');
+        vendorPrefix(parallax_layers[1], 'Transform', 'translate3d(' + (angleXNormalised/2) + '%, ' + (angleYNormalised/2) + '%, 0)');
+        vendorPrefix(parallax_layers[0], 'Transform', 'translate3d(' + (angleXNormalised) + '%, ' + (angleYNormalised) + '%, 0)');
     }.bind(this));
 
     window.addEventListener('deviceorientation', function(event) {
@@ -41,8 +45,11 @@
 
         angleXNormalised = angleX / (maxRotation/maxDistance*2);
         angleYNormalised = angleY / (maxRotation/maxDistance*2);
-
-        vendorPrefix(image, 'Transform', 'translate3d(' + (angleXNormalised) + '%, ' + (angleYNormalised) + '%, 0)')
+        
+        vendorPrefix(image, 'Transform', 'translate3d(' + (angleXNormalised/3) + '%, ' + (angleYNormalised/4) + '%, 0)');
+        vendorPrefix(parallax_layers[2], 'Transform', 'translate3d(' + (angleXNormalised/3) + '%, ' + (angleYNormalised/3) + '%, 0)');
+        vendorPrefix(parallax_layers[1], 'Transform', 'translate3d(' + (angleXNormalised/2) + '%, ' + (angleYNormalised/2) + '%, 0)');
+        vendorPrefix(parallax_layers[0], 'Transform', 'translate3d(' + (angleXNormalised) + '%, ' + (angleYNormalised) + '%, 0)');
 	}.bind(this));  
 
 	window.addEventListener('load', function() {
@@ -57,7 +64,7 @@
 })();
 
 function vendorPrefix(element, property, value) {
-	element.style[property.toLowerCase()];
+	element.style[property] = value;
 	element.style["webkit" + property] = value;
 	element.style["moz" + property] = value;
 	element.style["ms" + property] = value;
