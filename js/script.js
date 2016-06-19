@@ -13,7 +13,7 @@
 		angleXNormalised,
 		angleYNormalised,
 		image = document.querySelector('.sp-background__wrapper'),
-		parallax_layers = document.querySelectorAll('.sp-parallax__layer'),
+		parallax_layers = document.querySelectorAll('.sp-parallax__wrapper'),
 		maxDistance = (hasTouch ? 10 : 5),
     	maxRotation = 40;
 
