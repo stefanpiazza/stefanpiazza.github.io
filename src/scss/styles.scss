@@ -1,0 +1,80 @@
+$colours: (
+	colour-1: #FFC857,
+	colour-2: #E9724C,
+	colour-3: #C5283D,
+	colour-4: #255F85,
+	colour-5: #293241
+);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.section {
+	background-color: #222;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.content {
+	color: #fff;
+	left: 50%;
+	position: absolute;
+	text-transform: uppercase;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+
+.content-5 {
+	text-align: center;
+}
+
+.text {
+	display: block;
+
+	.letter {
+		display: inline-block;
+	}
+}
+
+.text-large {
+	font-size: 15vmin;
+	font-family: 'Roboto', serif;
+}
+
+.text-medium {
+	font-size: 10vmin;
+	font-family: 'Roboto', serif;
+}
+
+.text-small {
+	font-size: 5vmin;
+	font-family: 'Roboto Slab', serif;
+}
+
+.text-8 {
+	letter-spacing: 0.075em;
+}
+
+.text-9 {
+	letter-spacing: 0.028em;
+}
+
+.text-10 {
+	letter-spacing: 0.027em;
+}
