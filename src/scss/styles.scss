@@ -13,17 +13,18 @@ $colours: (
 }
 
 .wrapper {
-	position: absolute;
-	width: 100%;
+	background-color: #222;
+	bottom: 0;
 	height: 100%;
 	left: 0;
-	top: 0;
+	overflow: hidden;
+	position: absolute;
 	right: 0;
-	bottom: 0;
+	top: 0;
+	width: 100%;
 }
 
 .section {
-	background-color: #222;
 	height: 100%;
 	overflow: hidden;
 	position: relative;
@@ -77,4 +78,61 @@ $colours: (
 
 .text-10 {
 	letter-spacing: 0.027em;
+}
+
+.circle {
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.circle-small {
+	height: 10vmin;
+	width: 10vmin;
+}
+
+.circle-medium {
+	width: 20vmin;
+	height: 20vmin;
+}
+
+.circle-large {
+	width: 50vmin;
+	height: 50vmin;
+}
+
+.circle-1 {
+	animation: bob 4000ms ease-in-out infinite;
+	background-color: map-get($colours, colour-2);
+	left: -40%;
+	position: absolute;
+	top: -40%;
+}
+
+.circle-2 {
+	background-color: map-get($colours, colour-1);
+	transform: translate(-10%, -10%);
+}
+
+.circle-3 {
+	animation: bob 4000ms ease-in-out infinite;
+	animation-delay: 1000ms;
+	background-color: map-get($colours, colour-3);
+	left: 80%;
+	position: absolute;
+	top: 80%;
+}
+
+.circle-4 {
+	animation: bob 4000ms ease-in-out infinite;
+	background-color: map-get($colours, colour-4);
+	animation-delay: 2000ms;
+	left: 100%;
+	position: absolute;
+	top: 100%;
+}
+
+@keyframes bob {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10%); }
+    100% { transform: translateY(0); }
 }

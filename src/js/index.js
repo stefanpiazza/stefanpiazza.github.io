@@ -52,6 +52,12 @@ timeline
 	.staggerFrom('.text-12 .letter', 0.75, { opacity: 0, ease: Power4.easeInOut }, 0.04, '-=0.65' )
 	.staggerFrom('.text-13 .letter', 0.75, { opacity: 0, ease: Power4.easeInOut }, 0.04, '-=0.65' )
 
+	.add('content-5-exit', '+=0.5')
+
+	.to('.section', 1.75, { yPercent: -100, ease: Power4.easeInOut }, 'content-5-exit' )
+
+	.to('.content-5', 1.75, { yPercent: 150, ease: Power4.easeIn }, '-=1.55' )
+	.from('.circles', 1.75, { yPercent: 150, ease: Power4.easeOut }, '-=1.55' )
 
 window.addEventListener('load', function() {
 	document.body.classList.remove('is-loading');
