@@ -80,59 +80,165 @@ $colours: (
 	letter-spacing: 0.027em;
 }
 
+.circle-wrapper {
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.circle-wrapper-2 {
+	transform: translate(-50%, -50%) rotate(-40deg);
+}
+
+.circle-wrapper-3 {
+	transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.circle-wrapper-4 {
+	transform: translate(-50%, -50%) rotate(170deg);
+	@media (min-width: 650px) {
+		transform: translate(-50%, -50%) rotate(140deg);
+	}
+}
+
 .circle {
-	background-color: #fff;
 	border-radius: 50%;
+
+	a & {
+		&:after { 
+			border-radius: 50%;
+			border: 1vmin solid transparent;
+			@media (min-width: 650px) {
+				border-width: 0.75vmin;
+			}
+			content: '';
+			height: 100%;
+			left: 50%;
+			padding: 1vmin;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			transition-duration: 300ms;
+			width: 100%;
+		}
+
+		&:hover {
+			&:after {
+				border-color: #dedede;
+			}
+		}
+	}
 }
 
 .circle-small {
 	height: 10vmin;
 	width: 10vmin;
+
+	@media (min-width: 650px) {
+		height: 7.5vmin;
+		width: 7.5vmin;		
+	}
 }
 
 .circle-medium {
-	width: 20vmin;
 	height: 20vmin;
+	width: 20vmin;
+
+	@media (min-width: 650px) {
+		height: 15vmin;
+		width: 15vmin;		
+	}
 }
 
 .circle-large {
-	width: 50vmin;
-	height: 50vmin;
+	height: 40vmin;
+	width: 40vmin;
+
+	@media (min-width: 650px) {
+		height: 30vmin;
+		width: 30vmin;		
+	}
 }
 
 .circle-1 {
-	animation: bob 4000ms ease-in-out infinite;
-	background-color: map-get($colours, colour-2);
-	left: -40%;
-	position: absolute;
-	top: -40%;
+	background-color: map-get($colours, colour-1);
 }
 
 .circle-2 {
-	background-color: map-get($colours, colour-1);
-	transform: translate(-10%, -10%);
+	background-color: map-get($colours, colour-2);
+	left: 50%;
+	position: absolute;
+	top: -20%;
+	transform: translate(-50%, -50%);
 }
 
 .circle-3 {
-	animation: bob 4000ms ease-in-out infinite;
-	animation-delay: 1000ms;
 	background-color: map-get($colours, colour-3);
-	left: 80%;
+	left: 50%;
 	position: absolute;
-	top: 80%;
+	top: -65%;
+	transform: translate(-50%, -50%);
 }
 
 .circle-4 {
-	animation: bob 4000ms ease-in-out infinite;
 	background-color: map-get($colours, colour-4);
-	animation-delay: 2000ms;
-	left: 100%;
+	left: 50%;
 	position: absolute;
-	top: 100%;
+	top: -105%;
+	transform: translate(-50%, -50%);
 }
 
-@keyframes bob {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(10%); }
-    100% { transform: translateY(0); }
+.ring {
+	border-radius: 50%;
+	border: 1vmin solid #d3d3d3;
+	@media (min-width: 650px) {
+		border-width: 0.75vmin;
+	}
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.ring-1 {
+	width: 58vmin;
+	height: 58vmin;
+
+	@media (min-width: 650px) {
+		height: 43.5vmin;
+		width: 43.5vmin;		
+	}
+}
+
+.ring-2 {
+	width: 95vmin;
+	height: 95vmin;	
+
+	@media (min-width: 650px) {
+		height: 71.25vmin;
+		width: 71.25vmin;		
+	}
+}
+
+.ring-3 {
+	width: 125vmin;
+	height: 125vmin;
+
+	@media (min-width: 650px) {
+		height: 93.75vmin;
+		width: 93.75vmin;		
+	}	
+}
+
+.ring-4 {
+	width: 165vmin;
+	height: 165vmin;	
+
+	@media (min-width: 650px) {
+		height: 123.75vmin;
+		width: 123.75vmin;		
+	}	
 }
