@@ -57,7 +57,7 @@ timeline
 	.to('.section', 1.75, { yPercent: -100, ease: Power4.easeInOut }, 'content-5-exit' )
 
 	.from('.ring', 1.75, { opacity: 0, ease: Power4.easeInOut } )
-	.from('.circle-wrapper', 1.75, { opacity: 0, rotationZ: 180, ease: Power4.easeInOut, clearProps: 'all' }, '-=1.75' )
+	.from(['.circle-wrapper-2', '.circle-wrapper-3', '.circle-wrapper-4'], 1.75, { opacity: 0, rotationZ: 180, ease: Power4.easeInOut, clearProps: 'all' }, '-=1.75' )
 
 window.addEventListener('load', function() {
 	document.body.classList.remove('is-loading');

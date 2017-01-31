@@ -80,27 +80,52 @@ $colours: (
 	letter-spacing: 0.027em;
 }
 
+.button {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	font-size: 4vmin;
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 1.5vmin 2vmin;
+	border: 0.5vmin solid #fff;
+}
+
+.circles {
+	height: 40vmin;
+	width: 40vmin;
+
+	@media (min-width: 650px) {
+		height: 30vmin;
+		width: 30vmin;		
+	}
+}
+
 .circle-wrapper {
 	height: 100%;
-	left: 50%;
+	left: 0%;
 	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
+	top: 0%;
 	width: 100%;
 }
 
+.circle-wrapper-1 {}
+
 .circle-wrapper-2 {
-	transform: translate(-50%, -50%) rotate(-40deg);
+	transform: rotate(-40deg);
 }
 
 .circle-wrapper-3 {
-	transform: translate(-50%, -50%) rotate(30deg);
+	transform: rotate(30deg);
 }
 
 .circle-wrapper-4 {
-	transform: translate(-50%, -50%) rotate(170deg);
+	transform: rotate(170deg);
 	@media (min-width: 650px) {
-		transform: translate(-50%, -50%) rotate(140deg);
+		transform: rotate(140deg);
 	}
 }
 
