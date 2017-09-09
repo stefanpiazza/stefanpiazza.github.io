@@ -1,0 +1,107 @@
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10vw 0;
+  padding: 0 5vw;
+  position: relative; }
+  @media (orientation: landscape) {
+    .content {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse; } }
+
+.content__header {
+  position: relative; }
+  @media (orientation: landscape) {
+    .content__header {
+      margin-left: -10vw;
+      width: 50vw;
+      z-index: 1; } }
+
+.content__footer {
+  position: relative; }
+  @media (orientation: landscape) {
+    .content__footer {
+      width: 50vw; } }
+
+.content__title {
+  display: inline-block;
+  font-family: Arial;
+  font-size: 10vw;
+  line-height: 1.2em;
+  padding: 0 1vw;
+  position: relative;
+  white-space: nowrap; }
+  @media (orientation: landscape) {
+    .content__title {
+      font-size: 7.5vw; } }
+
+.content__subtitle {
+  display: inline-block;
+  font-family: Arial;
+  font-size: 5vw;
+  line-height: 1.2em;
+  padding: 0 1vw;
+  position: relative;
+  white-space: nowrap; }
+  @media (orientation: landscape) {
+    .content__subtitle {
+      font-size: 3.75vw; } }
+
+.content__bio {
+  display: none;
+  font-family: Arial;
+  line-height: 1.2em;
+  padding: 0 1vw;
+  position: relative; }
+  @media (orientation: landscape) {
+    .content__bio {
+      bottom: -21.5vw;
+      display: inline-block;
+      font-size: 2vw;
+      position: absolute;
+      right: 0;
+      width: 37.5vw; } }
+
+.content__revealer {
+  background-color: red;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%; }
+
+.content__image {
+  margin: 10vw 0 0 0;
+  padding-top: 66.66666%;
+  position: relative; }
+  @media (orientation: landscape) {
+    .content__image {
+      margin-top: 0; } }
+  .content__image img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=app.css.map*/
