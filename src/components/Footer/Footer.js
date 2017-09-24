@@ -8,7 +8,8 @@ import { render } from 'react-dom';
 class Footer extends React.Component {
     render() {
         return (
-            <footer></footer>
+            <footer className="footer">
+            </footer>
         );
     }
 }

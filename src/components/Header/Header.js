@@ -8,7 +8,8 @@ import { render } from 'react-dom';
 class Header extends React.Component {
     render() {
         return (
-            <header></header>
+            <header className="header">
+            </header>
         );
     }
 }

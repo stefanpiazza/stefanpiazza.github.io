@@ -261,12 +261,33 @@
 
     }
 
-    .content__element {
-        background-color: #F8F8F8;
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/87/Golden_lion_tamarin_portrait3.jpg');
-        background-position: top;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
+    @supports (object-fit: cover) {
+        img {
+            background-color: #F8F8F8;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    @supports not (object-fit: cover) {
+        img {
+            display: none;
+        }
+
+        .content__element {
+            background-color: #F8F8F8;
+            background-image: url('/static/images/monkey-1440.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
     }
 }
