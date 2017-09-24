@@ -24,8 +24,12 @@ class Home extends React.Component {
                         <div className="content__element"></div>
                         <div className="content__revealer content__revealer--secondary"></div>
                     </div>
-                    <p className="content__bio content__reveal content__reveal--left content__reveal--delay-400">
-                        <div className="content__element">Github, CodePen and LinkedIn</div>
+                    <p className="content__social content__reveal content__reveal--left content__reveal--delay-400">
+                        <div className="content__element">
+                            <a href="https://github.com/stefanpiazza/" className="content__social-link">Github</a>
+                            <a href="https://codepen.io/stefanpiazza/" className="content__social-link">CodePen</a>
+                            <a href="https://www.linkedin.com/in/stefanpiazza/" className="content__social-link">LinkedIn</a>
+                        </div>
                         <div className="content__revealer content__revealer--primary"></div>
                     </p>
                 </div>

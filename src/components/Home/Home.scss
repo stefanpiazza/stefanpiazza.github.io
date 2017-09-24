@@ -134,7 +134,7 @@
     }
 }
 
-.content__bio {
+.content__social {
     display: inline-block;
     font-family: Arial;
     font-size: 4vw;
@@ -148,6 +148,14 @@
         font-size: 1.5vw;
         left: calc(33.33333vw + 2vw);
         position: absolute;
+    }
+}
+
+.content__social-link {
+    color: #222222;
+
+    & + .content__social-link {
+        margin-left: 2vw;
     }
 }
 
@@ -166,16 +174,16 @@
 }
 
 .content__revealer--primary {
-    background-color: #663399;
+    background-color: #222222;
 }
 
 .content__revealer--secondary {
-    background-color: #E3BE3F;
+    background-color: #222222;
 }
 
 .content__reveal {
     background-color: #ffffff;
-    
+
     .content__element {
         animation-name: content-fade-in;
         animation-duration: 0ms;
@@ -254,6 +262,7 @@
     }
 
     .content__element {
+        background-color: #F8F8F8;
         background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/87/Golden_lion_tamarin_portrait3.jpg');
         background-position: top;
         background-size: cover;
