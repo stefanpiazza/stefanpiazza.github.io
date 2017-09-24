@@ -1043,7 +1043,7 @@ var Footer = function (_React$Component) {
     _createClass(Footer, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement('div', null);
+            return _react2.default.createElement('footer', null);
         }
     }]);
 
@@ -1093,7 +1093,7 @@ var Header = function (_React$Component) {
     _createClass(Header, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement('div', null);
+            return _react2.default.createElement('header', null);
         }
     }]);
 
@@ -1182,11 +1182,25 @@ var Home = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         'p',
-                        { className: 'content__bio content__reveal content__reveal--left content__reveal--delay-400' },
+                        { className: 'content__social content__reveal content__reveal--left content__reveal--delay-400' },
                         _react2.default.createElement(
                             'div',
                             { className: 'content__element' },
-                            'Github, CodePen and LinkedIn'
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'https://github.com/stefanpiazza/', className: 'content__social-link' },
+                                'Github'
+                            ),
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'https://codepen.io/stefanpiazza/', className: 'content__social-link' },
+                                'CodePen'
+                            ),
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'https://www.linkedin.com/in/stefanpiazza/', className: 'content__social-link' },
+                                'LinkedIn'
+                            )
                         ),
                         _react2.default.createElement('div', { className: 'content__revealer content__revealer--primary' })
                     )
@@ -1361,7 +1375,7 @@ var styles = __webpack_require__(19);
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"content":"content","content__header":"content__header","contentHeader":"content__header","content__footer":"content__footer","contentFooter":"content__footer","content__title":"content__title","contentTitle":"content__title","content__subtitle":"content__subtitle","contentSubtitle":"content__subtitle","content__bio":"content__bio","contentBio":"content__bio","content__revealer":"content__revealer","contentRevealer":"content__revealer","content__revealer--primary":"content__revealer--primary","contentRevealerPrimary":"content__revealer--primary","content__revealer--secondary":"content__revealer--secondary","contentRevealerSecondary":"content__revealer--secondary","content__reveal":"content__reveal","contentReveal":"content__reveal","content__element":"content__element","contentElement":"content__element","content-fade-in":"content-fade-in","contentFadeIn":"content-fade-in","content__reveal--left":"content__reveal--left","contentRevealLeft":"content-reveal-left","content-cover-left":"content-cover-left","contentCoverLeft":"content-cover-left","content-reveal-left":"content-reveal-left","content__reveal--right":"content__reveal--right","contentRevealRight":"content-reveal-right","content-cover-right":"content-cover-right","contentCoverRight":"content-cover-right","content-reveal-right":"content-reveal-right","content__reveal--delay-200":"content__reveal--delay-200","contentRevealDelay200":"content__reveal--delay-200","content__reveal--delay-400":"content__reveal--delay-400","contentRevealDelay400":"content__reveal--delay-400","content__reveal--delay-600":"content__reveal--delay-600","contentRevealDelay600":"content__reveal--delay-600","content__image":"content__image","contentImage":"content__image"};
+module.exports = {"content":"content","content__header":"content__header","contentHeader":"content__header","content__footer":"content__footer","contentFooter":"content__footer","content__title":"content__title","contentTitle":"content__title","content__subtitle":"content__subtitle","contentSubtitle":"content__subtitle","content__social":"content__social","contentSocial":"content__social","content__social-link":"content__social-link","contentSocialLink":"content__social-link","content__revealer":"content__revealer","contentRevealer":"content__revealer","content__revealer--primary":"content__revealer--primary","contentRevealerPrimary":"content__revealer--primary","content__revealer--secondary":"content__revealer--secondary","contentRevealerSecondary":"content__revealer--secondary","content__reveal":"content__reveal","contentReveal":"content__reveal","content__element":"content__element","contentElement":"content__element","content-fade-in":"content-fade-in","contentFadeIn":"content-fade-in","content__reveal--left":"content__reveal--left","contentRevealLeft":"content-reveal-left","content-cover-left":"content-cover-left","contentCoverLeft":"content-cover-left","content-reveal-left":"content-reveal-left","content__reveal--right":"content__reveal--right","contentRevealRight":"content-reveal-right","content-cover-right":"content-cover-right","contentCoverRight":"content-cover-right","content-reveal-right":"content-reveal-right","content__reveal--delay-200":"content__reveal--delay-200","contentRevealDelay200":"content__reveal--delay-200","content__reveal--delay-400":"content__reveal--delay-400","contentRevealDelay400":"content__reveal--delay-400","content__reveal--delay-600":"content__reveal--delay-600","contentRevealDelay600":"content__reveal--delay-600","content__image":"content__image","contentImage":"content__image"};
 
 /***/ }),
 /* 30 */
