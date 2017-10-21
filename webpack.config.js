@@ -15,7 +15,6 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 module.exports = {
     entry: {
         app: "./src/index.js",
-        commons: ["react", "react-dom"]
     },
     output: {
         path: path.resolve(__dirname, "./app/"),
@@ -113,14 +112,12 @@ module.exports = {
             {
                 from: "./src/manifest.json",
                 to: "manifest.json"
-            }
+            },
+            {
+                from: "./src/index.html",
+                to: "index.html"
+            },
         ]),
-        new HtmlWebpackPlugin({
-            chunks: ["commons", "app"],
-            filename: "index.html",
-            template: "./src/index.html",
-            title: "Stefan Piazza"
-        }),
         new FaviconsWebpackPlugin({
             logo: "./src/favicon.png",
             prefix: "static/images/favicons/"
