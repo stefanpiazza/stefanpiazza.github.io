@@ -11,4 +11,5 @@ export default defineConfig({
   },
   integrations: [icon()],
   site: "https://stefanpiazza.github.io",
+  base: "/stefanpiazza.github.io",
 });
