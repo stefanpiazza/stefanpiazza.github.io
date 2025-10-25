@@ -1,98 +1,46 @@
-# PWA Boilerplate
-Basic progressive web app boilerplate.
+# Astro Starter Kit: Basics
 
-## Getting Started
-
-### Instalation
-```
-npm install or yarn
+```sh
+npm create astro@latest -- --template basics
 ```
 
-### Usage
-Basic express server
-```
-node server.js
-```
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-Basic webpack command to builds files in app folder
-```
-webpack
-```
+## 🚀 Project Structure
 
-Watches files for changes and uses Browsersync plugin to proxy express server.
-```
-webpack -w
-```
+Inside of your Astro project, you'll see the following folders and files:
 
-** Start express server and run webpack watch to begin development. **
-
-
-## Structure
-### Development
-```
-src/
-    components/
-        Header/
-            Header.js
-            Header.scss
-
-    App.js
-    App.scss
-
-    index.js
-    index.scss
-
-    sw.js
-
-    manifest.json
-
-postscss.config.js
-sw-precache.config.js
-webpack.config.js
-
-server.js
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src
+│   ├── assets
+│   │   └── astro.svg
+│   ├── components
+│   │   └── Welcome.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       └── index.astro
+└── package.json
 ```
 
-- components - Contains example header component
-    - Header
-        - Header.js - Basic React component with header element and nested title
-        - Header.scss - Styles for header component
-- App.js - App component with nested Header
-- App.scss - App styles, non component specific
-- index.js - Script file to manage imports and reference for Webpack entry point
-- index.scss - Default styles, non app specific
-- sw.js - Imported by sw-precache.config.js for custom [sw-toolbox ](https://googlechrome.github.io/sw-toolbox/) routing.
-- manifest.json - Web App manifest, copied over to app on build
-- postscss.config.js - Autoprefixer configuration
-- sw-precache.config.js - SW-Precache configuration
-- webpack.config.js - Webpack configuration
-- server.js - Express server
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
+## 🧞 Commands
 
-### Production
-```
-app/
-    static/
-        images/
-            ...
-        scripts/
-            ...
-        styles/
-            ...
+All commands are run from the root of the project, from a terminal:
 
-    index.html
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-    manifest.json
+## 👀 Want to learn more?
 
-    service-worker.js
-```
-
-## Technologies
-- Webpack - Build system for all files
-- Babel - JavaScript polyfill
-- SASS - CSS pre-processor
-- PostCSS - Autoprefixer on CSS files
-- SW Precache - Service worker library used to cache files
-- Browsersync - Development proxy server
-- React - Interface building library
-- Express - Backend server
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

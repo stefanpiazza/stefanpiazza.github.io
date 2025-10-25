@@ -1,0 +1,111 @@
+---
+import "../styles/global.css";
+
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout>
+  <main class="h-full p-6">
+    <div class="grid justify-center">
+      <nav class="mb-2">
+        <ul class="flex gap-2">
+          <li class="">
+            <a
+              href="http://github.com/stefanpiazza"
+              class=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon
+                name="fa-brands:github"
+                class="h-6 w-6 hover:text-gray-500"
+              />
+            </a>
+          </li>
+          <li class="">
+            <a
+              href="https://www.linkedin.com/in/stefanpiazza/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class=""
+            >
+              <Icon
+                name="fa-brands:linkedin"
+                class="h-6 w-6 hover:text-gray-500"
+              />
+            </a>
+          </li>
+          <li class="">
+            <a
+              href="https://codepen.io/stefanpiazza/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class=""
+            >
+              <Icon
+                name="fa-brands:codepen"
+                class="h-6 w-6 hover:text-gray-500"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="mb-4">
+        <div class="flex flex-wrap items-center gap-2">
+          <h1 class="font-mono text-2xl font-semibold text-gray-900">
+            Stefan Piazza
+          </h1>
+          <span
+            class="bg-gray-900 p-2 font-mono text-base font-semibold text-white"
+          >
+            engineering manager_
+          </span>
+        </div>
+      </section>
+      <section class="mb-4">
+        <h2 class="font-mono text-lg font-semibold text-gray-900">
+          experience_
+        </h2>
+        <ul class="flex flex-col">
+          <li class="mb-2">
+            <p class="font-mono text-base text-gray-900">Engineering Manager</p>
+            <p class="font-mono text-base text-gray-500">
+              Zoopla - October 2024 / Current
+            </p>
+          </li>
+          <li class="mb-2">
+            <p class="font-mono text-base text-gray-900">Tech Lead</p>
+            <p class="font-mono text-base text-gray-500">
+              Zoopla - August 2024 / October 2024
+            </p>
+          </li>
+          <li class="mb-2">
+            <p class="font-mono text-base text-gray-900">Software Engineer</p>
+            <p class="font-mono text-base text-gray-500">
+              Zoopla - March 2021 / October 2024
+            </p>
+          </li>
+          <li class="mb-2">
+            <p class="font-mono text-base text-gray-900">Software Engineer</p>
+            <p class="font-mono text-base text-gray-500">
+              Condé Nast - January 2019 / March 2021
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="font-mono text-lg font-semibold text-gray-900">skills_</h2>
+        <ul>
+          <li class="font-mono text-base text-gray-500">React</li>
+          <li class="font-mono text-base text-gray-500">React Native</li>
+          <li class="font-mono text-base text-gray-500">Next.js</li>
+          <li class="font-mono text-base text-gray-500">JavaScript</li>
+          <li class="font-mono text-base text-gray-500">Node.js</li>
+          <li class="font-mono text-base text-gray-500">GraphQL</li>
+          <li class="font-mono text-base text-gray-500">Python</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</Layout>
