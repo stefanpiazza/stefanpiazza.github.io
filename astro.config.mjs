@@ -10,5 +10,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   integrations: [icon()],
-  site: "https://stefanpiazza.github.io/",
+  site: "https://stefanpiazza.github.io",
 });
